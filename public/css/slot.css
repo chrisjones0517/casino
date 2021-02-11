@@ -1,0 +1,328 @@
+#winAmount {
+    color: #00ff00;
+    font-weight: 700;
+    text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
+}
+
+#slotWinHeading {
+    font-weight: 700;
+    text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
+}
+
+#slotMachine {
+    position: relative;
+}
+
+#slot-img {
+    width: 75%;
+}
+
+#anyCombo {
+    font-size: 1.18rem;
+}
+
+.vector {
+    position: absolute;
+    bottom: 45.1%;
+    width: 10%;
+    height: 20%;
+}
+
+.vector-img {
+    width: 90%;
+}
+
+#column1 {
+    left: 24%;
+}
+
+#column2 {
+    left: 42%;
+}
+
+#column3 {
+    left: 60%;
+}
+
+.slotBtn {
+    position: absolute;
+}
+
+.slotBtn:hover {
+    cursor: pointer;
+}
+
+#spin {
+    width: 10%;
+    top: 72%;
+    left: 69%;
+    position: absolute;
+}
+
+#bet1 {
+    width: 7%;
+    top: 72%;
+    left: 15%;
+    position: absolute;
+}
+
+#bet5 {
+    width: 7%;
+    top: 72%;
+    left: 24%;
+    position: absolute;
+}
+
+#bet10 {
+    width: 8.5%;
+    top: 72%;
+    left: 33%;
+    position: absolute;
+}
+
+#bet50 {
+    width: 8.5%;
+    top: 72%;
+    left: 43.5%;
+    position: absolute;
+}
+
+#bet100 {
+    width: 10%;
+    top: 72%;
+    left: 54%;
+    position: absolute;
+}
+
+/* light effects */
+
+.light {
+    height: 3.8%;
+    width: 1.3%;
+    border-radius: 50%;
+    position: absolute;
+}
+
+#lights {
+    position: absolute;
+    top: 0%;
+    left: 15.1%;
+    height: 25%;
+    width: 64%;
+}
+
+/* top row */
+
+.light-top {
+    top: 1.5%;
+}
+
+#light1 {
+    left: 0.25%;
+}
+
+#light2 {
+    left: 6.4%;
+}
+
+#light3 {
+    left: 12.5%;
+}
+
+#light4 {
+    left: 18.7%;
+}
+
+#light5 {
+    left: 24.8%;
+}
+
+#light6 {
+    left: 30.9%;
+}
+
+#light7 {
+    left: 37.1%;
+}
+
+#light8 {
+    left: 43.1%;
+}
+
+#light9 {
+    left: 49.3%;
+}
+
+#light10 {
+    left: 55.5%;
+}
+
+#light11 {
+    left: 61.6%;
+}
+
+#light12 {
+    left: 67.7%;
+}
+
+#light13 {
+    left: 73.9%;
+}
+
+#light14 {
+    left: 80.0%;
+}
+
+#light15 {
+    left: 86.1%;
+}
+
+#light16 {
+    left: 92.2%;
+}
+
+#light17 {
+    left: 98.4%;
+}
+
+/* bottom row */
+
+.light-bottom {
+    top: 95%;
+}
+
+#light18 {
+    left: 0.25%;
+}
+
+#light19 {
+    left: 6.5%;
+}
+
+#light20 {
+    left: 12.5%;
+}
+
+#light21 {
+    left: 18.7%;
+}
+
+#light22 {
+    left: 24.9%;
+}
+
+#light23 {
+    left: 30.9%;
+}
+
+#light24 {
+    left: 37.1%;
+}
+
+#light25 {
+    left: 43.1%;
+}
+
+#light26 {
+    left: 49.3%;
+}
+
+#light27 {
+    left: 55.5%;
+}
+
+#light28 {
+    left: 61.6%;
+}
+
+#light29 {
+    left: 67.7%;
+}
+
+#light30 {
+    left: 73.9%;
+}
+
+#light31 {
+    left: 80.0%;
+}
+
+#light32 {
+    left: 86.2%;
+}
+
+#light33 {
+    left: 92.1%;
+}
+
+#light34 {
+    left: 98.3%;
+}
+
+/* right column */
+
+.light-right {
+    left: 98.3%;
+}
+
+#light35 {
+    top: 2%;
+}
+
+#light36 {
+    top: 13.2%;
+}
+
+#light37 {
+    top: 27.2%;
+}
+
+#light38 {
+    top: 41.2%;
+}
+
+#light39 {
+    top: 55.2%;
+}
+
+#light40 {
+    top: 69.2%;
+}
+
+#light41 {
+    top: 83.2%;
+}
+
+/* left column */
+
+.light-left {
+    left: 0.2%;
+}
+
+#light42 {
+    top: 2%;
+}
+
+#light43 {
+    top: 13.2%;
+}
+
+#light44 {
+    top: 27.2%;
+}
+
+#light45 {
+    top: 41.2%;
+}
+
+#light46 {
+    top: 55.2%;
+}
+
+#light47 {
+    top: 69.2%;
+}
+
+#light48 {
+    top: 83.2%;
+}

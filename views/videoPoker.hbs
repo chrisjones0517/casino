@@ -1,0 +1,162 @@
+<div id="pokerPanel">
+    <table id="payoutTable" class="table">
+        <tr>
+            <td>ROYAL FLUSH</td>
+            <td class="payoutTD">250</td>
+            <td class="payoutTD">500</td>
+            <td class="payoutTD">750</td>
+            <td class="payoutTD">1000</td>
+            <td class="text-danger payoutTD">4000</td>
+        </tr>
+        <tr>
+            <td>STRAIGHT FLUSH</td>
+            <td class="payoutTD">50</td>
+            <td class="payoutTD">100</td>
+            <td class="payoutTD">150</td>
+            <td class="payoutTD">200</td>
+            <td class="payoutTD">250</td>
+        </tr>
+        <tr>
+            <td>FOUR OF A KIND</td>
+            <td class="payoutTD">25</td>
+            <td class="payoutTD">50</td>
+            <td class="payoutTD">75</td>
+            <td class="payoutTD">100</td>
+            <td class="payoutTD">125</td>
+        </tr>
+        <tr>
+            <td>FULL HOUSE</td>
+            <td class="payoutTD">9</td>
+            <td class="payoutTD">18</td>
+            <td class="payoutTD">27</td>
+            <td class="payoutTD">36</td>
+            <td class="payoutTD">45</td>
+        </tr>
+        <tr>
+            <td>FLUSH</td>
+            <td class="payoutTD">6</td>
+            <td class="payoutTD">12</td>
+            <td class="payoutTD">18</td>
+            <td class="payoutTD">24</td>
+            <td class="payoutTD">30</td>
+        </tr>
+        <tr>
+            <td>STRAIGHT</td>
+            <td class="payoutTD">4</td>
+            <td class="payoutTD">8</td>
+            <td class="payoutTD">12</td>
+            <td class="payoutTD">16</td>
+            <td class="payoutTD">20</td>
+        </tr>
+        <tr>
+            <td>THREE OF A KIND</td>
+            <td class="payoutTD">3</td>
+            <td class="payoutTD">6</td>
+            <td class="payoutTD">9</td>
+            <td class="payoutTD">12</td>
+            <td class="payoutTD">15</td>
+        </tr>
+        <tr>
+            <td>TWO PAIR</td>
+            <td class="payoutTD">2</td>
+            <td class="payoutTD">4</td>
+            <td class="payoutTD">6</td>
+            <td class="payoutTD">8</td>
+            <td class="payoutTD">10</td>
+        </tr>
+        <tr>
+            <td>JACKS OR BETTER</td>
+            <td class="payoutTD">1</td>
+            <td class="payoutTD">2</td>
+            <td class="payoutTD">3</td>
+            <td class="payoutTD">4</td>
+            <td class="payoutTD">5</td>
+        </tr>
+    </table>
+    <div id="stats" class="d-flex justify-content-around">
+        <h2 class="d-inline-block">CREDITS: <span id="vpMoney"></span></h2>
+        <h2 class="d-inline-block">BET: <span id="bet"></span></h2>
+    </div>
+    <div id="pokerDiv" class="d-flex justify-content-around mt-2">
+        <div class="cardVector">
+            <div id="card1" class="d-inline-block playingCard">
+                <span id="value1" class="ml-2"></span>
+                <div class="suit-img-div text-center"></div>
+            </div>
+            <div class="text-center">
+                <button class="btn btn-primary m-2 holdBtn">HOLD</button>
+            </div>
+        </div>
+        <div class="cardVector">
+            <div id="card2" class="d-inline-block playingCard">
+                <span id="value2" class="ml-2"></span>
+                <div class="suit-img-div text-center"></div>
+            </div>
+            <div class="text-center">
+                <button class="btn btn-primary m-2 holdBtn">HOLD</button>
+            </div>
+        </div>
+        <div class="cardVector">
+            <div id="card3" class="d-inline-block playingCard">
+                <span id="value3" class="ml-2"></span>
+                <div class="suit-img-div text-center"></div>
+            </div>
+            <div class="text-center">
+                <button class="btn btn-primary m-2 holdBtn">HOLD</button>
+            </div>
+        </div>
+        <div class="cardVector">
+            <div id="card4" class="d-inline-block playingCard">
+                <span id="value4" class="ml-2"></span>
+                <div class="suit-img-div text-center"></div>
+            </div>
+            <div class="text-center">
+                <button class="btn btn-primary m-2 holdBtn">HOLD</button>
+            </div>
+        </div>
+        <div class="cardVector">
+            <div id="card5" class="d-inline-block playingCard">
+                <span id="value5" class="ml-2"></span>
+                <div class="suit-img-div text-center"></div>
+            </div>
+            <div class="text-center">
+                <button class="btn btn-primary m-2 holdBtn">HOLD</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="btnDiv" class="d-flex justify-content-around mt-2 mb-2">
+    <button id="changeBet" class="btn btn-primary">CHANGE BET</button>
+    <button id="betMax" class="btn btn-primary">BET MAX</button>
+    <button class="btn btn-primary save">SAVE</button>
+    <button id="deal" class="btn btn-primary">DEAL</button>
+</div>
+
+<div id="vpWinner" class="modal" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-body">
+                <h4 id="payType" class="text-center pb-2 pt-1"></h4>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="playAgainModal" class="modal" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-body">
+                <h3>Play again?</h3>
+                <button id="playVPagain" class="btn btn-primary">YES</button>
+                <a href="/" class="btn btn-secondary ml-2">NO</a>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+

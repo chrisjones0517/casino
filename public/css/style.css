@@ -1,0 +1,140 @@
+.spacer {
+    height: 5rem;
+}
+
+#app {
+    min-height: 92.35vh;
+}
+
+footer {
+    position: relative;
+    bottom: 0;
+    width: 100vw;
+    height: 100px; 
+}
+
+.open-sans {
+    font-family: 'Open Sans', sans-serif;
+}
+
+#homeHeading {
+    font-weight: 700;
+    color: #ccffff;
+    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+}
+
+.content {
+    background-color: #ccffff;
+    font-size: 1.5rem;
+}
+
+.iframe-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%;
+    height: 0;
+}
+
+.iframe-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.dropdown-item {
+    color: #007bff;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.dropdown-item:hover {
+    text-shadow: -1px 0 5px #ff69b4, 0 1px 5px #ff69b4, 1px 0 5px #ff69b4, 0 -1px 5px #ff69b4;
+}
+
+#leaderBoardBtn {
+    color: #007bff;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+#leaderBoardBtn:hover {
+    color: #000;
+    text-shadow: -1px 0 5px #ff69b4, 0 1px 5px #ff69b4, 1px 0 5px #ff69b4, 0 -1px 5px #ff69b4;
+    cursor: pointer;
+}
+
+#login:hover {
+    cursor: pointer;
+}
+
+.loginInput {
+    margin-right: 30%;
+    float: right;
+}
+
+.inputDesc {
+    font-size: 0.75rem;
+}
+
+#leaderData, #leaderBoardHeading {
+    background-color: #000066;
+    color: #ffff00;
+    font-weight: 700;
+}
+
+#cookiesDiv {
+    position: fixed;
+    background-color: rgba(255, 255, 255, 0.5);
+    bottom: 0;
+    width: 100vw;
+    display: none;
+}
+
+.social-media-link {
+    display: inline-block;
+    margin: 0 1rem;
+}
+
+.link-desc {
+    display: block;
+    font-size: 0.75rem;
+}
+
+#project-list {
+    color: #ffff00;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    list-style: none;
+}
+
+.portfolioBtn {
+    text-shadow: none;
+}
+
+@media screen and (max-width: 600px) {
+    .contactLabel {
+        display: block;
+    }
+
+    #myPhone {
+        margin-bottom: 2rem;
+    }
+
+    .portfolioBtn {
+        width: 100%;
+        margin: 0.5rem auto !important;
+    }
+
+    .img-container {
+        width: 100%;
+    }
+
+    #my-pic {
+        margin: 0 0 2rem 0 !important;
+        ;
+    }
+}
+
+
+
+
+

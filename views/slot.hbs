@@ -1,0 +1,107 @@
+<h2 class="text-center mt-5 mb-5"><strong>Player: <span>$</span><span id="money"></span></strong></h2>
+<div class="text-center">
+    <button type="button" id="showPayout" class="btn btn-primary mb-5" data-toggle="modal"
+        data-target="#payoutModal">Show Payout</button>
+    <button class="btn btn-primary save mb-5 ml-2">Save</button>
+</div>
+
+<div id="slotMachine" class="mx-auto d-flex justify-content-around align-items-center">
+    <img id="slot-img" src="./images/slot_machine.png" alt="slot machine">
+    <div id="lights"></div>
+    <div id="column1" class="vector d-flex align-items-center">
+        <img id="img1" class="vector-img mx-auto">
+    </div>
+    <div id="column2" class="vector d-flex align-items-center">
+        <img id="img2" class="vector-img mx-auto">
+    </div>
+    <div id="column3" class="vector d-flex align-items-center">
+        <img id="img3" class="vector-img mx-auto">
+    </div>
+    <img id="spin" class="slotBtn" src="./images/spinBtn.png" alt="spin button">
+    <img id="bet1" class="slotBtn betBtn" src="./images/bet1Btn.png" alt="bet 1 button">
+    <img id="bet5" class="slotBtn betBtn" src="./images/bet5Btn.png" alt="bet 5 button">
+    <img id="bet10" class="slotBtn betBtn" src="./images/bet10Btn.png" alt="bet 10 button">
+    <img id="bet50" class="slotBtn betBtn" src="./images/bet50Btn.png" alt="bet 50 button">
+    <img id="bet100" class="slotBtn betBtn" src="./images/bet100Btn.png" alt="bet 100 button">
+</div>
+
+<div id="winner" class="modal" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 id="slotWinHeading" class="modal-title text-primary">Winner!!!</h2>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <h4>You won <span id="winAmount"></span>&nbsp;!!!</h4>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="gameover" class="modal" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title text-danger">GAME OVER</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p>Would you like to play again?</p>
+            </div>
+            <div class="modal-footer">
+                <button id="yes" type="button" class="btn btn-primary" data-dismiss="modal">Yes</button>
+                <a href="/" class="btn btn-secondary">No</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="payoutModal" class="modal" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="modal-title text-primary">Payout Scheme</h2>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <h4><img src="./images/red_seven.png" alt="red seven">&nbsp;<img src="./images/white_seven.png"
+                        alt="white seven">&nbsp;<img src="./images/blue_seven.png" alt="blue seven"> = 500 x bet</h4>
+                <h4><img src="./images/money.png" alt="money sign">&nbsp;<img src="./images/money.png"
+                        alt="money sign">&nbsp;<img src="./images/money.png" alt="money sign"> = 200 x bet</h4>
+                <h4><img src="./images/red_seven.png" alt="red seven">&nbsp;<img src="./images/red_seven.png"
+                        alt="red seven">&nbsp;<img src="./images/red_seven.png" alt="red seven"> = 175 x bet</h4>
+                <h4><img src="./images/white_seven.png" alt="white seven">&nbsp;<img src="./images/white_seven.png"
+                        alt="white seven">&nbsp;<img src="./images/white_seven.png" alt="white seven"> = 150 x bet</h4>
+                <h4><img src="./images/blue_seven.png" alt="blue seven">&nbsp;<img src="./images/blue_seven.png"
+                        alt="blue seven">&nbsp;<img src="./images/blue_seven.png" alt="blue seven"> = 125 x bet</h4>
+                <h4><img src="./images/triple_bar.png" alt="triple bar">&nbsp;<img src="./images/triple_bar.png"
+                        alt="triple bar">&nbsp;<img src="./images/triple_bar.png" alt="triple bar"> = 110 x bet</h4>
+                <h4><img src="./images/double_bar.png" alt="double bar">&nbsp;<img src="./images/double_bar.png"
+                        alt="double bar">&nbsp;<img src="./images/double_bar.png" alt="double bar"> = 100 x bet</h4>
+                <h4><img src="./images/bar.png" alt="bar">&nbsp;<img src="./images/bar.png" alt="bar">&nbsp;<img
+                        src="./images/bar.png" alt="bar"> = 75 x bet</h4>
+                <h4><img src="./images/cherries.png" alt="cherries">&nbsp;<img src="./images/cherries.png"
+                        alt="cherries">&nbsp;<img src="./images/cherries.png" alt="cherries"> = 50 x bet</h4>
+                <h4><span id="anyCombo">Any Combo </span><img src="./images/blue_seven.png" alt="blue seven" width="35">|<img src="./images/white_seven.png"
+                        alt="white seven" width="35">|<img src="./images/red_seven.png" alt="red seven" width="35"> = 40 x bet</h4>
+                <h4><img src="./images/grape.png" alt="grape">&nbsp;<img src="./images/grape.png" alt="grape">&nbsp;<img
+                        src="./images/grape.png" alt="grape"> = 10 x bet</h4>
+                <h4><img src="./images/lemon.png" alt="lemon">&nbsp;<img src="./images/lemon.png" alt="lemon">&nbsp;<img
+                        src="./images/lemon.png" alt="lemon"> = 5 x bet</h4>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>

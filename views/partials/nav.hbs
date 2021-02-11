@@ -1,0 +1,100 @@
+<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-primary">
+    <div class="container">
+        <a class="navbar-brand" href="/"><img src="./images/myLogo.png" width="30" height="30"
+                class="d-inline-block align-top" alt="brand logo">&nbsp;&nbsp;CJ Innovations</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+            aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center" id="navbarCollapse">
+            <ul class="navbar-nav w-75 nav-justified">
+                <li class="nav-item {{home}}">
+                    <a class="nav-link" href="/">Home</a>
+                </li>
+                <li class="nav-item dropdown {{games}}">
+                    <a class="nav-link dropdown-toggle" href="/games" id="navbarDropdownMenuLink" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Games</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a id="leaderBoardBtn" href="#" class="dropdown-item">Leader Board</a>
+                        <a class="dropdown-item" href="/slot">Slot Machine</a>
+                        <a class="dropdown-item" href="/blackjack">Black Jack</a>
+                        <a class="dropdown-item" href="/videoPoker">Video Poker</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a id="login" href="#" class="nav-link">Login</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div id="loginModal" class="modal" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="modal-title">Login/Register</h2>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <h4 class="mb-3">Login</h4>
+                <label for="username">Username:</label>
+                <input id="username" class="loginInput" type="text"><br><br>
+                <label for="password">Password:</label>
+                <input id="password" class="loginInput" type="password"><br><br>
+                <button id="loginSubmit" type="button" class="btn btn-primary mb-3 mt-2">Submit</button>
+                <p id="loginMsg"></p>
+                <hr>
+                <h4 class="mb-3">Register</h4>
+                <label for="usernameReg">Choose a username:</label>
+                <input id="usernameReg" class="loginInput" type="text"><br><br>
+                <p class="inputDesc mb-4">Username must consist of alphanumeric characters or underscores only.</p>
+                <label for="passwordReg">Choose a password:</label>
+                <input id="passwordReg" class="loginInput" type="password"><br><br>
+                <p class="inputDesc mb-4">Password must contain at least 8 characters, at least 1 number, 1 upper case,
+                    and 1
+                    lower case.</p>
+                <label for="confirmPassword">Confirm password:</label>
+                <input id="confirmPassword" class="loginInput" type="password"><br><br>
+                <button id="registerBtn" class="btn btn-primary mb-3 mt-2">Register</button>
+                <p id="registerMsg"></p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="leaderBoardModal" class="modal" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 id="leaderBoardHeading" class="modal-title w-100 text-center">Leader Board</h2>
+            </div>
+            <div class="modal-body">
+                <table id="leaderData" class="table">
+
+                </table>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="savedModal" class="modal" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-body">
+                <h2 id="savedMsg" class="w-100 text-center"></h2>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>

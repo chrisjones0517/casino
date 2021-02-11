@@ -1,0 +1,61 @@
+<div id="blackjackPanel">
+    <div id="overlay" class="row">
+        <div id="leftSide" class="col-6">
+            <div id="playerTotalDiv" class="text-center">
+                PLAYER:<span id="playerTotal" class="ml-3"></span>
+            </div>
+            <div id="playerHandDiv">
+
+            </div>
+            <div id="playerMsgDiv">
+                <h2></h2>
+            </div>
+        </div>
+        <div id="rightSide" class="col-6">
+            <div id="dealerTotalDiv" class="text-center">
+                DEALER:<span id="dealerTotal" class="ml-3"></span>
+            </div>
+            <div id="dealerHandDiv">
+
+            </div>
+            <div id="creditsDiv">
+                <span class="mr-2">CREDITS:<span id="credits" class="ml-2"></span></span>
+            </div>
+            <div id="dealerMsgDiv">
+                <h2></h2>
+            </div>
+        </div>
+        <div id="bjBtnDiv" class="row">
+            <div class="col-5 btn-part d-flex justify-content-around">
+                <button id="split" class="btn btn-warning bjBtn" disabled="true">SPLIT</button>
+                <button id="double" class="btn btn-warning bjBtn" disabled="true">DOUBLE</button>
+                <button id="insurance" class="btn btn-warning bjBtn" disabled="true">INSURANCE</button>
+                <button id="bet1bj" class="btn btn-warning bjBtn">BET +1</button>
+            </div>
+            <div id="bjBetDiv" class="col-2 btn-part">BET:<span id="bjBet" class="ml-2"></span></div>
+            <div class="col-5 btn-part d-flex justify-content-around">
+                <button id="stand" class="btn btn-warning bjBtn" disabled="true">STAND</button>
+                <button id="hit" class="btn btn-warning bjBtn" disabled="true">HIT</button>
+                <button id="maxBetbj" class="btn btn-warning bjBtn">MAX BET</button>
+                <button id="dealBj" class="btn btn-warning bjBtn">DEAL</button>
+            </div>
+        </div>
+
+    </div>
+</div>
+<button id="bjSaveBtn" class="btn btn-primary w-100 mt-2 mb-2 save">SAVE</button>
+
+<div id="bjGameover" class="modal" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-body">
+                <h3>Play again?</h3>
+                <button id="playBJagain" class="btn btn-primary">YES</button>
+                <a href="/" class="btn btn-secondary ml-2">NO</a>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
